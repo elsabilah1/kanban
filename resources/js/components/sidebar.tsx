@@ -17,7 +17,7 @@ export default function Sidebar({ boards, selectedBoard, setSelectedBoard }: Sid
     const { theme, setTheme } = useTheme();
 
     return (
-        <div className="hidden min-h-screen min-w-max flex-col border-r border-lines-light bg-white md:flex dark:border-lines-dark dark:bg-dark-grey">
+        <div className="hidden min-h-screen w-3xs flex-col border-r border-lines-light bg-white md:flex dark:border-lines-dark dark:bg-dark-grey">
             <div className="mb-8 flex h-20 items-center px-6">
                 <img src={logoLight} className="hidden dark:block" alt="Logo" />
                 <img src={logoDark} className="block dark:hidden" alt="Logo" />
@@ -73,7 +73,7 @@ function SidebarButton({ className, children, ...props }: React.ComponentProps<'
     return (
         <button
             className={cn(
-                'flex h-12 cursor-pointer items-center gap-3 rounded-r-full fill-medium-grey pr-20 pl-6 text-sm font-bold whitespace-nowrap text-medium-grey hover:bg-main-purple/10 hover:fill-main-purple hover:text-main-purple dark:hover:bg-white',
+                'flex h-12 w-full cursor-pointer items-center gap-3 rounded-r-full fill-medium-grey px-6 text-sm font-bold whitespace-nowrap text-medium-grey hover:bg-main-purple/10 hover:fill-main-purple hover:text-main-purple focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-main-purple-hover dark:hover:bg-white',
                 className,
             )}
             {...props}

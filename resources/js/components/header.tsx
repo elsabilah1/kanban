@@ -27,7 +27,7 @@ export default function Header({ boards, selectedBoard, setSelectedBoard }: Head
             <Button>
                 <span className="capitalize">+ add new task</span>
             </Button>
-            <button className="mr-2 cursor-pointer px-6">
+            <button className="mr-2 cursor-pointer px-6 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-main-purple-hover">
                 <img src={iconMoreOption} alt="Icon more option" />
             </button>
         </div>
